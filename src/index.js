@@ -5,9 +5,9 @@ exports.min = function min (array) {
         if(array[i] < minVal){
             minVal = array[i];
         }
-        // if(array[i] = '') {
-        //     return 0;
-        // }
+        if(array[i] = '') {
+            array[i] = 0;
+        }
     }
   return minVal;
 }
@@ -18,9 +18,9 @@ exports.max = function max (array) {
         if(array[i] > maxVal){
             maxVal = array[i];
         }
-        // if(array[i] = '') {
-        //     return 0;
-        // }
+        if(array[i] = '') {
+            array[i] = 0
+        }
     }
   return maxVal;
 }
@@ -28,9 +28,9 @@ exports.max = function max (array) {
 exports.avg = function avg (array) {
     let average = 0;
     for (let i = 0; i < array.length; i++ ) {
-        // if(array[i] = '') {
-        //     return 0;
-        // }
+        if(array[i] = '') {
+            array[i] = 0;
+        }
         average = (average + array[i])/array.length;
     }
   return average;
